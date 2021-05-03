@@ -1,65 +1,105 @@
 Lab 1
 
-Using Excel_Lab1_Dataset
+Using Excel_Lab1_Dataset (Airline Safety Data)
 
 Topics Covered:
   - Data Formatting
     - Data Table
-    - CellFormat - Percentage
+    - CellFormat
+      - Percentage
   - Conditional Formatting
   - Aggregate Functions
     - Count and CountIF
     - Sum and SumIF
     - Average
 
-Exercise:
-  1. Make sure you open the “Airline Safety Data” workbook.
-  2. Make an answer sheet tab in the workbook to record answers when they apply. (some answers are formatting on the data itself)
-  3. Set Data filtering on this sheet. You can use either Data -> Filter, or format as a Table.
-  4. Sort the Column “Incidents from 1985-99” in ascending order.
+
+
+Lab 1 Exercise:
+  1. Sort the Column “Incidents from 1985-99” in ascending order.
     a. Who has the fewest incidents in the criteria?
     b. Who has the most?
-  5. Use Conditional Formatting
+  2. Use Conditional Formatting
     a. Highlight in green any value of “0” for both “Fatal Accidents” Columns.
     b. Highlight in Red on the same column from above fatalities greater than 100.
-  6. Count Functions
+  3. Count Functions
     a. Using the Count or CountIf function, count how many airlines had greater than 100 fatalities AND greater than 5 incidents, from 1985 to 1999. Record your results.
     b. Repeat the above step for the 2000 – 2014 data.
-  7. At the bottom of the Data Set, make a new row that records SUM TOTALS for each column.
+  4. At the bottom of the Data Set, make a new row that records SUM TOTALS for each column.
     a. Compare the sum totals of the number of incidents between 1985-99 and 2000- 14. Which timeframe had fewer total incidents? Record your answer.
     b. Do the same from above, comparing the fatalities.
-  8. Now calculate the SUM TOTALS, only if the values are green from Step 3 above. Record your answer.
-  9. Do the same as Step 8, only if values meet the red criteria.
-  10. Make two new Columns at the Right of the data set. One for “Percent Change 1985-99”. One for “Percent Change 2000 – 2014”.
-    a. Think about the Percent Change formula, look this up if you need to.
-    b. Apply this formula for both the new columns you just made, for every row in the data set.
-  11. In the columns from Step 10 above:
-    a. Highlight in green any values that DECREASED in incidents or fatalities.
-    b. Highlight in red any values that INCREASED.
-    c. Calculate the AVERAGE percent change for both columns. Record your answers.
+  5. Make two new Columns at the Right of the data set. One for “Percent Change Incidents”. One for “Percent Change Fatalities”.
+  6. In the columns from Step 5 above:
+    a. Calculate the AVERAGE percent change for both columns. Record your answers.
+
+
 
 Answers to Lab 1 Exercise:
-  4a. Cathay Pacific, Hawaiian Airlines, TAP - Air Portugal
-  4b. Aeroflot
+  1a. Cathay Pacific, Hawaiian Airlines, TAP - Air Portugal
+  1b. Aeroflot
 
-  5a. Equal to 0, Color is green
-  5b. Function: =$H2>100
-                Applies to: $G$2:$G$57
-                Color is red
-      Function: =$E2>100
-                Applies to: $D$2:$D$57
-                Color is red
+  2a. Conditional formatting -> Highlight Cells -> Rules -> Equal to -> 0 = Green
+      Equal to 0, Color is green
+  2b. First select the entire table -> conditional formatting -> Manage rules -> [+] -> style:classic -> use formula:
+        Function: =$H2>100
+                  Applies to: $G$2:$G$57
+                  Color is red
+        Function: =$E2>100
+                  Applies to: $D$2:$D$57
+                  Color is red
 
-  6a. =COUNTIFS(Table11[Incidents From 1985 - 99], ">5",Table11[Fatalities from 1985 - 99], ">100")
+  3a. =COUNTIFS(Table11[Incidents From 1985 - 99], ">5",Table11[Fatalities from 1985 - 99], ">100")
       = 14 airlines
-  6b. =COUNTIFS(Table11[Incidents From 2000 - 14], ">5",Table11[Fatalities from 2000 - 14], ">100")
+  3b. =COUNTIFS(Table11[Incidents From 2000 - 14], ">5",Table11[Fatalities from 2000 - 14], ">100")
       = 5 airlines
 
-  7a. =MIN(Airline!F59, Airline!C59)
+  4a. =MIN(Airline!F59, Airline!C59)
       = 231
       = Incidents from 2000 - 14
-  7b. =MIN(Airline!E59, Airline!H59)
+  4b. =MIN(Airline!E59, Airline!H59)
       = 3019
-      = Fatalities from 2000 - 14
-
-8. 
+      = Fatalities from 2000 - 14 
+  5. Column = Percent Change Incidents
+            =IFERROR(([@[Incidents from 2000 - 14]]-[@[Incidents From 1985 - 99]])/[@[Incidents From 1985 - 99]],1)
+     Column = Percent Change Fatalities
+            =IFERROR(([@[Fatalities from 2000 - 14]]-[@[Fatalities from 1985 - 99]])/[@[Fatalities from 1985 - 99]],1)
+  6. =AVERAGE(Table11[Percent Change Incidents])
+     = 3%
+     =AVERAGE(Table11[Percent Change Fatalities])
+     = 42%
+  
+  
+  
+Additional Notes:
+  - No spaces in syntax
+  - In order to reference another sheet that has spaces in the name simply inclose with ' ' Ex. 'Airline Safety Data'!A1
+  - Percent Change = (new_value - old_value)/old_value
+  - VLOOKUP(lookup_value, table_array, col_index_num, range_lookup)
+    vertical (column) lookup
+    col_index_num = the column number in table_array from which the matching value should be returned, usually left side
+    range_lookup = usually always enter [False], this gives exact values/matches
+  - * XLOOKUP(lookup_value, lookup_array, return_array, N/A, 0, 1)
+    recommended function to use
+  - =IF()
+  - =IFS()
+  - Logical tests are equations with an operation
+    Ex. (A2>=10, "True", "False")
+  - =MAX()
+  - =XLOOKUP(MAX())
+  - =MAXIFS()
+    this returns a number
+  - =XMATCH(lookup_value, lookup_array, match_mode, search_mode)
+    this function is exactly like using [command] + [f] in Microsoft Word
+  - =TRANSPOSE()
+    this turns a table's columns into rows and rows into columns
+    if using this function is giving you trouble, a work-around is to copy table -> paste special -> fill values -> transpose
+  - =CONCAT()
+    returns a string of text
+  - =HLOOKUP()
+    horizontal (row) lookup
+    just like VLOOKUP but instead of columns, you are searching rows... just like XLOOKUP
+  - =COUNTIF(range, criteria)
+    Ex. COUNTIF(B9:B14, A3)
+  - =COUNTIFS()
+  - =SUMIF()
+  - =SUMIFS()
