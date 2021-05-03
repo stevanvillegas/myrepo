@@ -1,2 +1,3 @@
 # JUMP-data-analyst
-JUMP Data Analyst - projects and exercises
+
+Projects and exercises completed throughout the JUMP Data Analyst program.
