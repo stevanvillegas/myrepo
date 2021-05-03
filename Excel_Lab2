@@ -52,3 +52,12 @@ Answers to Lab 2 Exercise:
          Created a table with each country in one column and the units sold from that country in a seperate column. Then, used this syntax: =SUMIFS(financials[Units Sold],financials[Product],'Chart Answers'!$C$36,financials[Country],[@Country])
   5c. The values for the total sum discounts per segment were manually copied from Table 4b.i.2. (in Excel_Lab2_myTables) column SUM Discounts
       The segment that offered the most discounts is Government
+
+
+
+Additional Notes:
+- .csv files are great for converting Microsoft Excel data cells into tables
+- Table Design -> Table Row [check]  = this gives you the ability to quickly calculate dataset totals along with several aggregate functions
+- Slicer Tool = used to filter data within a table, used for quick filtering, "Insert Slicer" on the Slice tab
+- Pivot tables
+- Sparklines = used as a graphical representation of a column 
