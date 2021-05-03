@@ -59,10 +59,12 @@ Answers to Lab 1 Exercise:
   4b. =MIN(Airline!E59, Airline!H59)
       = 3019
       = Fatalities from 2000 - 14 
+      
   5. Column = Percent Change Incidents
             =IFERROR(([@[Incidents from 2000 - 14]]-[@[Incidents From 1985 - 99]])/[@[Incidents From 1985 - 99]],1)
      Column = Percent Change Fatalities
             =IFERROR(([@[Fatalities from 2000 - 14]]-[@[Fatalities from 1985 - 99]])/[@[Fatalities from 1985 - 99]],1)
+            
   6. =AVERAGE(Table11[Percent Change Incidents])
      = 3%
      =AVERAGE(Table11[Percent Change Fatalities])
