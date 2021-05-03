@@ -40,6 +40,13 @@ Lab 3 Answers:
   3. Select the column "Unemployment Rate" and change the format from general to percentage
   4. Select the columns and change the format from general to currency, then increase decimal place
   5. * The pivot table dataset can be viewed in the Excel_Lab3_myTables *
+  5a.i. =COUNTIF(Table1[Major_category],[@[Major Category]])
+  5a.ii. =SUMIF(Table1[Major_category],[@[Major Category]],Table1[Employed])
+  5a.iii. =SUMIF(Table1[Major_category],[@[Major Category]],Table1[Unemployed])
+  5a.iv. =AVERAGEIF(Table1[Major_category],[@[Major Category]],Table1[Unemployment_rate])
+  5a.v. =AVERAGEIF(Table1[Major_category],[@[Major Category]],Table1[Median])
+  5a.vi. =AVERAGEIF(Table1[Major_category],[@[Major Category]],Table1[25th percentile of earnings])
+  5a.vii. =AVERAGEIF(Table1[Major_category],[@[Major Category]],Table1[75th percentile of earnings])
   6a. Created a seperate table consisting of a column with each Major Category and another column with each corresponding Average of Umemployment_rate, the values were manually copied from the pivot table dataset in 5a.
       * The graph can be viewed in the Excel_Lab3_myGraphs, the data table is in Excel_Lab3_myTables *
   6b. Created a seperate table consisting of a column with each Major Category and another column with each corresponding Average of Median, the values were manually copied from the pivot table dataset in 5a.
