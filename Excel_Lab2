@@ -37,7 +37,8 @@ Answers to Lab 2 Exercise:
   1. =([@[Units Sold]]*[@[Sale Price]])
   2. =([@[Gross Sales]]-[@Discounts])
   3. =([@[ Sales after discounts]]-([@[Units Sold]]*[@[Manufacturing Price]]))
-  4. SUM of Units Sold           =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!E:E)
+  4. * Refer to Excel_Lab2_Aggregate_Analysis for tables *
+     SUM of Units Sold           =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!E:E)
      SUM of Manufacturing Price  =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!F:F)
      SUM Sales Price             =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!G:G)
      SUM Gross Sales             =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!H:H)
