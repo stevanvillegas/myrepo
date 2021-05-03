@@ -1,0 +1,72 @@
+Table 5a.,,Data,,,,,,
+,Major_category,Number of Majors,Sum of Employed,Sum of Unemployed,Average of Unemployment_rate,Average of Median,Average of 25th percentile of earnings,Average of 75th percentile of earnings
+,Agriculture & Natural Resources,10,480415,18551,4%," $55,000.00 "," $36,550.00 "," $81,300.00 "
+,Arts,8,1308695,104125,10%," $43,525.00 "," $29,112.50 "," $64,500.00 "
+,Biology & Life Science,14,947058,57335,5%," $50,821.43 "," $33,214.29 "," $78,771.43 "
+,Business,13,7529851,434397,6%," $60,615.38 "," $41,853.85 "," $91,461.54 "
+,Communications & Journalism,4,1423041,101199,7%," $49,500.00 "," $34,000.00 "," $76,250.00 "
+,Computers & Mathematics,11,1410607,79974,6%," $66,272.73 "," $43,427.27 "," $95,818.18 "
+,Education,16,2833199,125336,5%," $43,831.25 "," $33,221.88 "," $58,456.25 "
+,Engineering,29,2621966,146389,5%," $77,758.62 "," $52,458.62 "," $108,534.48 "
+,Health,12,2192692,75013,5%," $56,458.33 "," $40,066.67 "," $77,500.00 "
+,Humanities & Liberal Arts,15,2499175,179136,7%," $46,080.00 "," $31,413.33 "," $70,933.33 "
+,Industrial Arts & Consumer Services,7,753782,40360,6%," $52,642.86 "," $35,064.29 "," $76,857.14 "
+,Interdisciplinary,1,35706,2990,8%," $43,000.00 "," $32,000.00 "," $55,000.00 "
+,Law & Public Policy,5,718924,43049,7%," $52,800.00 "," $36,200.00 "," $78,800.00 "
+,Physical Sciences,10,707126,38221,6%," $62,400.00 "," $39,670.00 "," $92,000.00 "
+,Psychology & Social Work,9,1411983,104206,8%," $44,555.56 "," $31,011.11 "," $64,333.33 "
+,Social Science,9,1871803,132150,7%," $53,222.22 "," $37,144.44 "," $81,222.22 "
+,Total Result,173,28746023,1682431,6%," $56,816.18 "," $38,697.11 "," $82,506.36 "
+Table 6a.,Major Category,Average of Unemployment_rate,,,,,,
+,Agriculture & Natural Resources,4.13%,,,,,,
+,Arts,9.71%,,,,,,
+,Biology & Life Science,5.28%,,,,,,
+,Business,5.77%,,,,,,
+,Communications & Journalism,7.43%,,,,,,
+,Computers & Mathematics,6.36%,,,,,,
+,Education,4.97%,,,,,,
+,Engineering,5.36%,,,,,,
+,Health,4.98%,,,,,,
+,Humanities & Liberal Arts,7.47%,,,,,,
+,Industrial Arts & Consumer Services,6.26%,,,,,,
+,Interdisciplinary,8.37%,,,,,,
+,Law & Public Policy,7.29%,,,,,,
+,Physical Sciences,5.79%,,,,,,
+,Psychology & Social Work,8.46%,,,,,,
+,Social Science,7.03%,,,,,,
+,,,,,,,,
+Table 6b.,Major Category,Average of Median,,,,,,
+,Agriculture & Natural Resources," $55,000.00 ",,,,,,
+,Arts," $43,525.00 ",,,,,,
+,Biology & Life Science," $50,821.43 ",,,,,,
+,Business," $60,615.38 ",,,,,,
+,Communications & Journalism," $49,500.00 ",,,,,,
+,Computers & Mathematics," $66,272.73 ",,,,,,
+,Education," $43,831.25 ",,,,,,
+,Engineering," $77,758.62 ",,,,,,
+,Health," $56,458.33 ",,,,,,
+,Humanities & Liberal Arts," $46,080.00 ",,,,,,
+,Industrial Arts & Consumer Services," $52,642.86 ",,,,,,
+,Interdisciplinary," $43,000.00 ",,,,,,
+,Law & Public Policy," $52,800.00 ",,,,,,
+,Physical Sciences," $62,400.00 ",,,,,,
+,Psychology & Social Work," $44,555.56 ",,,,,,
+,Social Science," $53,222.22 ",,,,,,
+,,,,,,,,
+Table 6c.,Major Category,Sum of Employed,Sum of Unemployed,,,,,
+,Agriculture & Natural Resources,480415,18551,,,,,
+,Arts,1308695,104125,,,,,
+,Biology & Life Science,947058,57335,,,,,
+,Business,7529851,434397,,,,,
+,Communications & Journalism,1423041,101199,,,,,
+,Computers & Mathematics,1410607,79974,,,,,
+,Education,2833199,125336,,,,,
+,Engineering,2621966,146389,,,,,
+,Health,2192692,75013,,,,,
+,Humanities & Liberal Arts,2499175,179136,,,,,
+,Industrial Arts & Consumer Services,753782,40360,,,,,
+,Interdisciplinary,35706,2990,,,,,
+,Law & Public Policy,718924,43049,,,,,
+,Physical Sciences,707126,38221,,,,,
+,Psychology & Social Work,1411983,104206,,,,,
+,Social Science,1871803,132150,,,,,
