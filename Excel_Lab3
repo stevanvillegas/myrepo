@@ -1,2 +1,39 @@
 Lab 3
 
+Using Excel_Lab3_Dataset (College Majors Data Workbook)
+  MS Pivot Table Reference Page - https://bit.ly/3u4CPXP
+
+Topics Covered:
+  - Pivot Tables
+  - Charts Exercise:
+  
+
+
+Lab 3 Exercise:
+  1. Format the entirety of this data set as a table.
+    a. Make sure to go to the bottom row of data entry and then select the data from the bottom up. Don’t select the entire worksheet and then format as table (this will cause slow performance).
+  2. Calculate into the column “Unemployment Rate” the unemployment rate. Note, this compares the “Unemployed” as a ratio to the “Employed” and not the “Unemployed” to the “Total”.
+  3. Format the cells of the “Unemployment Rate” column as percentage.
+  4. Format the columns “Median”, “25th percentile of earnings”, and “75th percentile of earnings” as currency with 2 decimal places.
+  5. Pivot Table
+    a. Create a new table on a new sheet, based on our current table data set. For a refresher, see the MS Excel link at the top of this sheet. We are going to make a pivot table, so you can make the new sheet when you the pivot table as well.
+    b. Select your data set, then go to the Insert Ribbon and make a pivot table from our data set.
+    c. Leverage the power of the Pivot Table to aggregate our data by the “Major Category” column. There are several majors that fall into each category, and we want a larger scale view of how graduates from these categories are fairing in employment.
+    d. Use the Pivot Table to analyze the following per each “Major Category”
+      i. Number of Majors
+      ii. Sum of Employed
+      iii. Sum of Unemployed
+      iv. Average of Unemployment Rate (display as %)
+      v. Average of Median Income (display as currency)
+      vi. Average of 25th Percentile Earnings (display as currency) vii. Average of 75th Percentile Earnings (display as currency)
+  6. Using this data generated from our pivot table, make the following charts. 
+    a. A Pie Chart comparing
+      i. Major Categories and Average Unemployment Rate A Pie Chart comparing:
+      i. Major Categories and Average Median Income
+    b. A Clustered Bar Graph comparing each Major Category on:
+      i. Sum of Employed
+      ii. Sum of Unemployed
+      
+      
+      
+Lab 3 Answers:
