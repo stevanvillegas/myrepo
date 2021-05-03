@@ -1,0 +1,65 @@
+Lab 1
+
+Using Excel_Lab1_Dataset
+
+Topics Covered:
+  - Data Formatting
+    - Data Table
+    - CellFormat - Percentage
+  - Conditional Formatting
+  - Aggregate Functions
+    - Count and CountIF
+    - Sum and SumIF
+    - Average
+
+Exercise:
+  1. Make sure you open the “Airline Safety Data” workbook.
+  2. Make an answer sheet tab in the workbook to record answers when they apply. (some answers are formatting on the data itself)
+  3. Set Data filtering on this sheet. You can use either Data -> Filter, or format as a Table.
+  4. Sort the Column “Incidents from 1985-99” in ascending order.
+    a. Who has the fewest incidents in the criteria?
+    b. Who has the most?
+  5. Use Conditional Formatting
+    a. Highlight in green any value of “0” for both “Fatal Accidents” Columns.
+    b. Highlight in Red on the same column from above fatalities greater than 100.
+  6. Count Functions
+    a. Using the Count or CountIf function, count how many airlines had greater than 100 fatalities AND greater than 5 incidents, from 1985 to 1999. Record your results.
+    b. Repeat the above step for the 2000 – 2014 data.
+  7. At the bottom of the Data Set, make a new row that records SUM TOTALS for each column.
+    a. Compare the sum totals of the number of incidents between 1985-99 and 2000- 14. Which timeframe had fewer total incidents? Record your answer.
+    b. Do the same from above, comparing the fatalities.
+  8. Now calculate the SUM TOTALS, only if the values are green from Step 3 above. Record your answer.
+  9. Do the same as Step 8, only if values meet the red criteria.
+  10. Make two new Columns at the Right of the data set. One for “Percent Change 1985-99”. One for “Percent Change 2000 – 2014”.
+    a. Think about the Percent Change formula, look this up if you need to.
+    b. Apply this formula for both the new columns you just made, for every row in the data set.
+  11. In the columns from Step 10 above:
+    a. Highlight in green any values that DECREASED in incidents or fatalities.
+    b. Highlight in red any values that INCREASED.
+    c. Calculate the AVERAGE percent change for both columns. Record your answers.
+
+Answers to Lab 1 Exercise:
+  4a. Cathay Pacific, Hawaiian Airlines, TAP - Air Portugal
+  4b. Aeroflot
+
+  5a. Equal to 0, Color is green
+  5b. Function: =$H2>100
+                Applies to: $G$2:$G$57
+                Color is red
+      Function: =$E2>100
+                Applies to: $D$2:$D$57
+                Color is red
+
+  6a. =COUNTIFS(Table11[Incidents From 1985 - 99], ">5",Table11[Fatalities from 1985 - 99], ">100")
+      = 14 airlines
+  6b. =COUNTIFS(Table11[Incidents From 2000 - 14], ">5",Table11[Fatalities from 2000 - 14], ">100")
+      = 5 airlines
+
+  7a. =MIN(Airline!F59, Airline!C59)
+      = 231
+      = Incidents from 2000 - 14
+  7b. =MIN(Airline!E59, Airline!H59)
+      = 3019
+      = Fatalities from 2000 - 14
+
+8. 
