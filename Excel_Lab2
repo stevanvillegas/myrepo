@@ -1,0 +1,47 @@
+Lab 2
+
+Using Excel_Lab2_Dataset (Finance Data Workbook)
+
+Topics Covered:
+  - Custom Functions
+  - Excel Functions
+  - Charts
+  
+  
+  
+Lab 2 Exercise:
+  1. Calculate the GROSS Sales for each entry (rows) in Column H.
+  2. Calculate the “Sales After Discounts” in Column J. (Note – some rows have a ‘-‘ that represents no discount. There ARE rows that do have discounts).
+  3. Calculate the Column for “Profits” and fill it in:
+    a. Consider the columns required to make this calculation.
+    b. The manufacturing price in column F is the cost or expense that goes into making EACH item. There is also data on the number units sold in column E.
+  4. Make a new sheet, and make a new table on this sheet for each below scenario:
+    a. Each table will show TOTALS of each relevant column:
+    b. Note – each below is a column that has values repeated multiple times. You are looking to do Aggregate analysis (the process of bringing many into one). So you will get the totals of each column, aggregated upon each point below (don’t need totals for the date columns L,M,N, and O.)
+     i. Aggregate Analysis by:
+       1. By Country
+       2. By Segment
+       3. By Product
+       4. By Month
+    c. (Hint for above) – that’s 4 tables that aggregate or group together data based on the common variables listed above.
+  5. Charts
+     a. Let’s go back to the Finance table – all the data should be filled in for each column now. You also have your own tables made that you can use in your analysis for below:
+     b. Create a graph that you believe best depicts monthly sales trends for profits in Mexico. Suggestions would be line graphs or pie charts. Put this on a new sheet called “Chart Answers”.
+     c. Next, make a pie chart that compares products and their profits. What was the most profitable product? Record your answer.
+      i. Once you identify the product, identify which country had the most sales of this product.
+     d. Make a new chart on this sheet. This chart compares Segment and Discounts so that we can see which segment offered the most discounts. Record your answer, for which segment offered the most discounts, which is revealed by your chart analysis.
+   
+   
+
+Answers to Lab 2 Exercise:
+  1. =([@[Units Sold]]*[@[Sale Price]])
+  2. =([@[Gross Sales]]-[@Discounts])
+  3. =([@[ Sales after discounts]]-([@[Units Sold]]*[@[Manufacturing Price]]))
+  4. SUM of Units Sold           =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!E:E)
+     SUM of Manufacturing Price  =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!F:F)
+     SUM Sales Price             =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!G:G)
+     SUM Gross Sales             =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!H:H)
+     SUM Discounts               =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!I:I)
+     SUM Sales after discounts   =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!J:J)
+     SUM Profit                  =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!K:K)
+     
