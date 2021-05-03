@@ -60,4 +60,4 @@ Additional Notes:
 - Table Design -> Table Row [check]  = this gives you the ability to quickly calculate dataset totals along with several aggregate functions
 - Slicer Tool = used to filter data within a table, used for quick filtering, "Insert Slicer" on the Slice tab
 - Pivot tables
-- Sparklines = used as a graphical representation of a column 
+- Sparklines = used as a graphical representation of a column or row, slicers give impressions of data, its quick, can be found at the end of the tab section in Excel
