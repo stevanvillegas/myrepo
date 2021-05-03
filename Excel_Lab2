@@ -36,7 +36,7 @@ Answers to Lab 2 Exercise:
   1. =([@[Units Sold]]*[@[Sale Price]])
   2. =([@[Gross Sales]]-[@Discounts])
   3. =([@[ Sales after discounts]]-([@[Units Sold]]*[@[Manufacturing Price]]))
-  4. * Refer to Excel_Lab2_Aggregate_Analysis for tables *
+  4. * Refer to Excel_Lab2_myTables *
      SUM of Units Sold           =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!E:E)
      SUM of Manufacturing Price  =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!F:F)
      SUM Sales Price             =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!G:G)
@@ -44,4 +44,11 @@ Answers to Lab 2 Exercise:
      SUM Discounts               =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!I:I)
      SUM Sales after discounts   =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!J:J)
      SUM Profit                  =SUMIF('Finance Data'!B:B,[@Country],'Finance Data'!K:K)
-     
+  5. * Refer to Excel_Lab2_myGraphs *
+  5a. Profits in Mexico column calculations syntax:  =SUMIFS(financials[Profit],financials[Country],"Mexico",financials[Month Name],[@Month])
+  5b. The values for profit per product was manually copied from Table 4b.i.3. (in Excel_Lab2_myTables) SUM Profit column
+      The most profitable product is Paseo
+  5b.i.  The country with the most sales of Paseo is Canada
+         Created a table with each country in one column and the units sold from that country in a seperate column. Then, used this syntax: =SUMIFS(financials[Units Sold],financials[Product],'Chart Answers'!$C$36,financials[Country],[@Country])
+  5c. The values for the total sum discounts per segment were manually copied from Table 4b.i.2. (in Excel_Lab2_myTables) column SUM Discounts
+      The segment that offered the most discounts is Government
