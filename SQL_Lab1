@@ -1,0 +1,37 @@
+Additional Notes:
+  - Databases are a collection of information organized in such a way that a computer program can quickly select desired data
+  - DBMS helps you create and manage databses
+  - Schema is a description of the database
+  - Subschema describes a subset of the database and which users have access to this subset
+  - An entity is an object in the real world that is distinguishable. Example - employees
+  - An attribute is a value used to describe an entity
+  - An instance, also known as a record, is a single specific occurance of an entity
+  - 1-1 relationship means that A cannot be related to more than one B, and B cannot be related to more than one A; example - a phone has only one phone number
+  - 1-Many relationship means A can be related to more than one B, B cannot be related to more than one A; example - one department has many employees
+  - Many-Many relationship means A can be related to more than one B, and B can be related to more than one A; example - books can have several authors, authors can write multiple books
+  - Normalization is a method for organizing data into a database to eliminate data repitition and undesireable characterisitics
+  - 1st NF is used to seperate repeating groups into new tables; a composite key is a type of primary key
+  - UML Diagrams provide a way to visualize the design of a software or system
+  - MSQL is a relational database management system (RDBMS)
+    - SQL Server Architecture:
+      - Database Engine is the core component of a server, consists of relational engine that processes queries and a storage engine that manages data storage and retrieval
+      - SQLOS stands for standard query language operating system and provides operating system services like memory and I/O (input/output) management
+  - Constraints define the rules that allow or restrict values stored in columns
+  - UNIQUE constraint means that all records in a column are unique. There can be multiple unique constraints in a table
+  - PRIMARY KEY constraint uniquely identifies each record in a table. There can only be one primary key in a table
+  - FOREIGN KEY constraint is a field in one table that refers to the primary key in another
+  - NOT NULL ensures that a column doesn’t contain any null values
+  - CHECK does a boolean (binary) check if values in that column meet the condition given
+  - DEFAULT constraint means that if no value is given, to set a default value for that column
+  - Data Manipulation Language (DML) is used to manage data within schema objects; the commands are INSERT, UPDATE, DELETE, and SELECT
+  - Data Definition Language (DDL) is used to create databases structures and schemas; the commands are CREATE, ALTER, DROP, TRUNCATE
+  - WHERE is used to attach a condition that will limit rows returned by query
+  - ORDER BY returns data in ascending or descending order; can be used with OFFSET, FETCH
+  - DISTINCT returns unique values for columns specified
+  - Logical conditions such as AND, OR, and NOT are used to specify multiple conditions and negate conditions
+  - OFFSET skips rows of data in a query
+  - TOP limits the number of rows returned by a query
+  - GROUP BY is a clause that groups rows in a table and allows these groups to be selected; can be used in combination with HAVING, aggregate functions, OVER & PARTITION BY
+  - HAVING is similar to WHERE; it can specify conditions for groups of data instead of rows
+  
+  
