@@ -3,15 +3,8 @@ Lab 1
 Using SQL_Lab1_Database (Human Resources)
 
 Topics Covered:
-  - Data Formatting
-    - Data Table
-    - CellFormat
-      - Percentage
-  - Conditional Formatting
-  - Aggregate Functions
-    - Count and CountIF
-    - Sum and SumIF
-    - Average
+  - Displaying data in queries
+  - Grouping data
 
 
 
@@ -181,5 +174,3 @@ Additional Notes:
   - TOP limits the number of rows returned by a query
   - GROUP BY is a clause that groups rows in a table and allows these groups to be selected; can be used in combination with HAVING, aggregate functions, OVER & PARTITION BY
   - HAVING is similar to WHERE; it can specify conditions for groups of data instead of rows
-  
-  
