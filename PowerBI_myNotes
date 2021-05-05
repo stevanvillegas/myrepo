@@ -1,0 +1,24 @@
+Additional Notes:
+- Buisness Intelligence (BI) leverages software and services to transform data into actionable insights that informs an organization's strategic and tactical buisness deicisions
+- Data analysis is the process of inspecting, cleansing, transformation, and modelling
+- Power BI is a buisness analystics solution to create data visualization interfaces such as graphs, charts, pie charts, etc,
+- Data visualization is the graphical representation of information and data
+- Microsoft Power BI Pro is a SaaS
+- *using Paperspace for Power BI (Mac user)
+- Pivot is used to transform rows to columns
+- Unpivot is used to transform columns to rows
+- Splitting columns allows you to split one column into multiple using delimiters, number of characters, etc,.
+- A star schema is a description of datasets; consists of one or more fact tables which reference any number of dimension tables
+  - Fact tables contain measureable facts, metrics (ID#'s)
+  - Dimension (DIM) tables is a companion to the fact table which contains descriptive attributes
+- when using the "new source" action, make sure to use "transform table"
+- to undo actions within Power BI, go to "Query Settings" view and [x] any undesirable "applied steps"
+- use "duplicate" to copy a table (recommended), use reference for correlating changes (not commonly used)
+- Conditional columns are columns created based on a condition imposed on an existing column
+- DAX (data analysis expressions) is used for mathematical operations such as arithmetic, comparison, logical and text concatenation; similar to excel functions; creates insights
+- Cardinality: each relationship can be modelled based on a cardinality type such as 1-1, 1-M, M-M
+- Cross-filter direction: each relationship is defined with a cross filter direction, which determines the direction that filters propogate; a single cross filter refers to a "single direction", and both refers to "both directions"
+- calculated columns return a value for each row
+- a measure returns one same value
+- slicers
+- creating hierarchy in fields
