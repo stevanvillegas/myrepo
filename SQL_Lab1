@@ -174,7 +174,17 @@ Additional Notes:
   - TOP limits the number of rows returned by a query
   - GROUP BY is a clause that groups rows in a table and allows these groups to be selected; can be used in combination with HAVING, aggregate functions, OVER & PARTITION BY
   - HAVING is similar to WHERE; it can specify conditions for groups of data instead of rows
-  
+  - Stored procedures are functions that can save and run multiple SQL statements; using parameters to do operations
+    - Can take multiple parameters, but can't return values directly
+  - User-defined functions are functions that perform some set of sql statements and return a value
+      - Procedures don't return values directly
+    - Scalar functions return a single value
+    - Table-Valued functions return a table
+  - Triggers are a special type of stores procedure that are executed automatically in response to some sort of event
+    - DML Triggers run after a DML statements (INSERT, UPDATE, DELETE) performed
+    - DDL Triggers run after a DDL (CREATE, ALTER, DROP) performed or some system stored procedures that perform DDL-like operations executed
+    - Logon Triggers run after some LOGON events (users login to database)
+    
   - Query Structure reference:
         SELECT
             [ DISTINCT ]
