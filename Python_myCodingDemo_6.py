@@ -1,3 +1,5 @@
+# simple phone numbers program
+
 phone = input("Enter a phone number to see if it is valid: ")
 phone_digits = phone.replace("(","").replace(")","").replace("-","").replace(" ","")
 
