@@ -1,3 +1,7 @@
+# the assignment was to expand on the Python_myCodingDemo_3 program
+
+
+
 # each employee is a dictionary like this : 
 #       "name" : "john William"
 #       "age" : 40
