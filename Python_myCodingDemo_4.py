@@ -19,7 +19,9 @@ for i in range(1, num +1):
         num_list.append(i)
 
 print(num_list)
+# sum of all integers
 sum = 0
+# loop over the list and print each element in that list
 for i in num_list:
     if isinstance(i,int):
         sum += i
