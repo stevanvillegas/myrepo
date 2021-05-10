@@ -32,11 +32,12 @@ programmer.update({
     "still_favorite": still_fav_langs
 })
 
-# print(programmer)
-
+        # print(programmer)
+    
+        # adding all of these collections as keys to the dictionary 
         # output = f"Name: {programmer['name']}, Years Coding: {programmer['years']}, Still Favorite Languages: {programmer['still_favorite']}"
         # print(output)
         
-# adding all of these collections as keys to the dictionary 
+# adding all of these collections as keys to the dictionary     
 template_string = "Name: {}, Years Coding: {} Still Favorite Languages: {}"
 print(template_string.format(programmer['name'], programmer['years'], programmer['still_favorite']))
