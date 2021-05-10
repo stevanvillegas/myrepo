@@ -46,6 +46,3 @@ print_keys(a = "10", b = 20, c = "Hello")
 print_keys(a = "10", b = 20, cb=formatted_print)
 
 print("Hello ", 42, [" World"], sep=" - ", end="\n\n")
-
-
-
