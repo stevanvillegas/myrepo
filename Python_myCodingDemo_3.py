@@ -1,3 +1,7 @@
+# a game of Rock Paper Scissors
+# a working program that accepts the user's input (r, p, or s)
+
+# user 1
 while True:
     while True:
         p1 = input("Player 1, Enter Rock(r), Paper(p), or Scissors(s): ")
@@ -5,6 +9,7 @@ while True:
             break
         print("Please enter a valid input")
 
+# user 2
     while True:
         p2 = input("Player 2, Enter Rock(r), Paper(p), or Scissors(s): ")
         if p2 in ["r","p","s"]:
@@ -18,6 +23,7 @@ while True:
     else:
         print("It's a Tie!")
     
+# the game runs once    
     again = input("play again (y/n)? ")
     if again == "n": 
         print("Bye!")
