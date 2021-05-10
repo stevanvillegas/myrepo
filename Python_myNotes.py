@@ -253,4 +253,108 @@ else :
       
       
       
-# 
+# using built in modules
+import sys
+import math
+import random
+import time
+import datetime
+import timeit
+
+print(sys.argv)
+
+print(math.sqrt(25))
+
+print(random.randint(10,20))
+print(random.sample(k=3,population=[1,1,2,3,45,"Hello"]))
+
+# print(time.sleep(2))
+print(time.time())
+
+print(datetime.datetime.now().minute)
+print(datetime.datetime(2019,2,21,12,30))
+
+func = "print('Hello World')"
+print(timeit.timeit(stmt=func,number=3))
+      
+      
+      
+# using filter and map
+letters = ['a','b','c','d','e','f','g','h','i','j','k']
+
+def vowel_filter(letter):
+    if letter in ['a','e','i','o','u']:
+        return False
+    return True
+
+consonants = filter(vowel_filter, letters)
+print(list(consonants))
+
+vowels = filter(lambda letter: True if letter in ['a','e','i','o','u'] else False, letters)
+print(list(vowels))
+
+upper_letters = map(lambda letter: letter.upper(), letters)
+print(list(upper_letters))
+
+list_comp = [letter.upper() for letter in letters if letter not in ['a','e','i','o','u']]
+print(list_comp)
+
+gen_ex = (letter.upper() for letter in letters if letter not in ['a','e','i','o','u'])
+print(gen_ex)
+      
+      
+      
+# using generators
+def my_gen():
+    yield "Hello"
+    yield "World"
+    yield 42
+
+for val in my_gen():
+    print(val)
+
+print(val)
+
+gen1 = my_gen()
+print(next(gen1))
+print(next(gen1))
+print(next(gen1))
+      
+      
+      
+# import module example
+import my_module 
+from my_module import say_hello as hello
+from my_module import *
+
+my_module.say_hello()
+greeting = my_module.custom_greeting("Good Morning", "Module")
+print(greeting)
+
+print(my_module.x)
+
+hello()
+print(get_x())
+
+print(f"You are running {__name__}")
+      
+      
+      
+# module example continued
+def say_hello():
+    print("Hello World")
+
+def custom_greeting(greeting = "Hello", name = "World"):
+    return f"{greeting}, {name}!"
+
+
+
+x = 42
+
+def get_x():
+    return x
+
+if __name__ == "__main__":
+    print(f"You are running {__name__}")
+else: 
+    print(f"You have imported {__name__}")
