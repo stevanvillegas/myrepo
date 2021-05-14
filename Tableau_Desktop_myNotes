@@ -1,1 +1,22 @@
+Documentation of my learning experience with Tableau Desktop:
 
+
+
+Additional Notes:
+- using excel files
+- adding new data sources (icon in header)
+- using Data -> Edit Blend Relationships -> custom -> select the two tables with the same values to create a link
+- dragging measures into Mark Cards -> Color -> Edit Colors
+- a red link icon beside a table means it is active
+- within the mark card, select a measure -> Add Table Calculation
+- Analysis -> Create Calculated Field
+    IF SUM(Profit)>0
+    THEN
+    "Positive"
+    ELSE
+    "Negative"
+    END
+- Analytics -> Trend Line -> Linear
+- Analytics -> Cluster -> Number of clusters (easily identifies groups)
+- Analytics -> Forecast -> (right click) Forecast Options -> Forecast Length
+- color 'Red and Green Diverging" is user-friendly
