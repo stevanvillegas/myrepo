@@ -22,3 +22,56 @@ Additional Notes:
 - a measure returns one same value
 - slicers
 - creating hierarchy in fields
+
+
+Assignment 1 measure syntax:
+  AuburnCitySales = CALCULATE(SUM(Sales_Table[Sale Value]), FILTER('Sales_Table', [City]="Auburn"))
+  ColumbiaCitySales = CALCULATE(SUM(Sales_Table[Sale Value]), FILTER('Sales_Table', [City]="Columbia"))
+  ColumbusCitySales = CALCULATE(SUM(Sales_Table[Sale Value]), FILTER('Sales_Table', [City]="Columbus"))
+  ConcordCitySales = CALCULATE(SUM(Sales_Table[Sale Value]), FILTER('Sales_Table', [City]="Concord"))
+  DesMoinesCitySales = CALCULATE(SUM(Sales_Table[Sale Value]), FILTER('Sales_Table', [City]="Des Moines"))
+  
+Assignment 2 measure syntax: Table 'All Measures'
+
+  AnyBlanks = COUNTBLANK(Stock[Make])
+
+  DistinctCars = DISTINCTCOUNT(Stock[Make])
+
+  AvgCostAstonMartin = CALCULATE(AVERAGE(Stock[CostPrice]), FILTER('Stock', [Make]="Aston Martin"))
+  AvgCostBentley = CALCULATE(AVERAGE(Stock[CostPrice]), FILTER('Stock', [Make]="Bentley"))
+  AvgCostJaguar = CALCULATE(AVERAGE(Stock[CostPrice]), FILTER('Stock', [Make]="Jaguar"))
+  AvgCostMGB = CALCULATE(AVERAGE(Stock[CostPrice]), FILTER('Stock', [Make]="MGB"))
+  AvgCostRollsRoyce = CALCULATE(AVERAGE(Stock[CostPrice]), FILTER('Stock', [Make]="Rolls Royce"))
+  AvgCostTriumph = CALCULATE(AVERAGE(Stock[CostPrice]), FILTER('Stock', [Make]="Triumph"))
+  AvgCostTVR = CALCULATE(AVERAGE(Stock[CostPrice]), FILTER('Stock', [Make]="TVR"))
+  AvgCostOverall = AVERAGE(Stock[CostPrice])
+
+  MaxCostAstonMartin = CALCULATE(MAX(Stock[CostPrice]), FILTER('Stock', [Make]="Aston Martin"))
+  MaxCostBentley = CALCULATE(MAX(Stock[CostPrice]), FILTER('Stock', [Make]="Bentley"))
+  MaxCostJaguar = CALCULATE(MAX(Stock[CostPrice]), FILTER('Stock', [Make]="Jaguar"))
+  MaxCostMGB = CALCULATE(MAX(Stock[CostPrice]), FILTER('Stock', [Make]="MGB"))
+  MaxCostRollsRoyce = CALCULATE(MAX(Stock[CostPrice]), FILTER('Stock', [Make]="Rolls Royce"))
+  MaxCostTriumph = CALCULATE(MAX(Stock[CostPrice]), FILTER('Stock', [Make]="Triumph"))
+  MaxCostTVR = CALCULATE(MAX(Stock[CostPrice]), FILTER('Stock', [Make]="TVR"))
+  MaxCostOverall = MAX(Stock[CostPrice])
+
+  MedianCostAstonMartin = CALCULATE(MEDIAN(Stock[CostPrice]), FILTER('Stock', [Make]="Aston Martin"))
+  MedianCostBentley = CALCULATE(MEDIAN(Stock[CostPrice]), FILTER('Stock', [Make]="Bentley"))
+  MedianCostJaguar = CALCULATE(MEDIAN(Stock[CostPrice]), FILTER('Stock', [Make]="Jaguar"))
+  MedianCostMGB = CALCULATE(MEDIAN(Stock[CostPrice]), FILTER('Stock', [Make]="MGB"))
+  MedianCostRollsRoyce = CALCULATE(MEDIAN(Stock[CostPrice]), FILTER('Stock', [Make]="Rolls Royce"))
+  MedianCostTriumph = CALCULATE(MEDIAN(Stock[CostPrice]), FILTER('Stock', [Make]="Triumph"))
+  MedianCostTVR = CALCULATE(MEDIAN(Stock[CostPrice]), FILTER('Stock', [Make]="TVR"))
+  MedianCostOverall = MEDIAN(Stock[CostPrice])
+
+  MinCostAstonMartin = CALCULATE(MIN(Stock[CostPrice]), FILTER('Stock', [Make]="Aston Martin"))
+  MinCostBentley = CALCULATE(MIN(Stock[CostPrice]), FILTER('Stock', [Make]="Bentley"))
+  MinCostJaguar = CALCULATE(MIN(Stock[CostPrice]), FILTER('Stock', [Make]="Jaguar"))
+  MinCostMGB = CALCULATE(MIN(Stock[CostPrice]), FILTER('Stock', [Make]="MGB"))
+  MinCostRollsRoyce = CALCULATE(MIN(Stock[CostPrice]), FILTER('Stock', [Make]="Rolls Royce"))
+  MinCostTriumph = CALCULATE(MIN(Stock[CostPrice]), FILTER('Stock', [Make]="Triumph"))
+  MinCostTVR = CALCULATE(MIN(Stock[CostPrice]), FILTER('Stock', [Make]="TVR"))
+  MinCostOverall = MIN(Stock[CostPrice])
+
+
+
