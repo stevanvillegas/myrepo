@@ -1,4 +1,4 @@
-Lab 1
+SQL Lab
 
 Using SQL_Lab_Database (Human Resources)
 
@@ -8,7 +8,7 @@ Topics Covered:
 
 
 
-Lab 1 Exercise:
+Lab Exercise:
   1. Find the 3 employees with the lowest salaries
   2. Find the employee with the 2nd highest salary who is has a phone number that begins with 515.
   3. Find the name, salary, and hire date of all employees hired before 1995 and a salary over $10,000.
@@ -23,7 +23,7 @@ Lab 1 Exercise:
 
 
 
-Lab 1 Answers in SQL:
+Lab Answers in SQL:
       USE HR_DB;
 
       SELECT * FROM dbo.employees;
