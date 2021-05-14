@@ -43,7 +43,7 @@ My experience using Tableau Prep:
     - all of the changes are logged on the left side of the selection pane; undo
     - applying recommendations can be very useful
     - excluding nulls will remove the null rows within all fields
-    - adding an output and changing the type into a microsoft excel file (.xlsx) -> Full refresh:create table -> saves a version of the tableau file as an excel file
+    - adding an output and changing the type into a Microsoft Excel file (.xlsx) -> Full refresh:create table -> saves a version of the tableau file as an excel file
     - creating a union between two tables
     - changing the type to cvs file
     - save flow (as seen in 'Tableau_Prep_myFlow.pdf')
@@ -51,8 +51,8 @@ My experience using Tableau Prep:
 
 
 Additional Notes:
-    - Tableau is a data analysis tool and buisness intelligence platform used for visualizations and analysis of data
-    - Tableau Desktop creates visualizations, workbooks and dashboards
+    - Tableau is a data analysis tool and business intelligence platform used for visualizations and analysis of data
+    - Tableau Desktop creates visualizations, workbooks, and dashboards
     - Tableau Prep is used to combine, clean, and shape data for analysis
     - Worksheets are where you build views of your data
     - Dashboards are a combination of views from various worksheets
@@ -62,11 +62,11 @@ Additional Notes:
     - Dimension fields contain qualitative values (names, dates, geographical data, etc.)
     - Measure fields contain quantitative and numeric values; you can apply calculations to measure fields and aggregate them
     - Dimensions and measures can be continuous (infinite range) or discrete (finite) values
-    - Green measures and dimensions are continous
+    - Green measures and dimensions are continuous
     - Blue measures and dimensions are discrete
     - Blends
-        - Allows you to work across multiple seperate data sources
-        - the data sources are queried seperately and the results are visualized together in the view
+        - Allows you to work across multiple separate data sources
+        - the data sources are queried separately and the results are visualized together in the view
         - Brings additional information from a secondary source to a primary source
     - Parameters are variables that can replace a value in a filter; calculations
     - Forecasts can be added to a view when there is a minimum of one data dimension and one measure
