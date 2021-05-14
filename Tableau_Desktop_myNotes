@@ -1,22 +1,62 @@
-Documentation of my learning experience with Tableau Desktop:
+Tableau
+
+Documentation of my learning experience in Tableau Desktop and Tableau Prep:
+
+
+
+My experience using Tableau Desktop:
+* All of my hands-on experience with Tableau Desktop can be viewed in the Tableau_Desktop_myVisualizations.pdf
+    - As seen on pages 1,2,3,4 (first four pages) of 'Tableau_Desktop_myVisualizations.pdf':
+        - using excel and csv files in Tableau Desktop
+        - adding new data sources (icon in header)
+        - using Data -> Edit Blend Relationships -> custom -> select the two tables with the same values to create a link
+        - dragging measures into Mark Cards -> Color -> Edit Colors
+        - a red link icon beside a table means it is active
+        - within the mark card, select a measure -> Add Table Calculation
+    - Analysis -> Create Calculated Field (as seen on page 5 of 'Tableau_Desktop_myVisualizations.pdf' title='Calculated Fields for Sub-Category Profits')
+        IF SUM(Profit)>0
+        THEN
+        "Positive"
+        ELSE
+        "Negative"
+        END
+    - Analytics -> Trend Line -> Linear (as seen on page 6 of 'Tableau_Desktop_myVisualizations.pdf' title='GlobalHealthTrendline')
+    - Analytics -> Cluster -> Number of clusters (easily identifies groups) (as seen on page 7 of 'Tableau_Desktop_myVisualizations.pdf' title='GlobalHealthClusters')
+    - Analytics -> Forecast -> (right click) Forecast Options -> Forecast Length (as seen on page 8 of 'Tableau_Desktop_myVisualizations.pdf' title='SalesForecast')
+    - Tip: The color 'Red - Green Diverging" is user-friendly (negative=red, positive=green)
+    - Using filters to produce a clean dataset (as seen on page 9 of 'Tableau_Desktop_myVisualizations.pdf' title='SalesFilters')
+        - Always remember to click 'Show Me' and choose a visualization for best results
+    - Using Tables such as 'Region', 'State', and 'Country' will give you geographical visualizations with a longitude and latitude (as seen on page 10 of 'Tableau_Desktop_myVisualizations.pdf' title='Sales and Profit Map')
+    - Instead of creating a new worksheet -> create dashboard with multiple sheets (as seen on page 11 of 'Tableau_Desktop_myVisualizations.pdf' title='Sales and Profit in the South Region')
+    - Instead of creating a new worksheet -> create story with captions (as seen on page 12 of 'Tableau_Desktop_myVisualizations.pdf' title='SalesProfitsStory')
 
 
 
 Additional Notes:
-- using excel files
-- adding new data sources (icon in header)
-- using Data -> Edit Blend Relationships -> custom -> select the two tables with the same values to create a link
-- dragging measures into Mark Cards -> Color -> Edit Colors
-- a red link icon beside a table means it is active
-- within the mark card, select a measure -> Add Table Calculation
-- Analysis -> Create Calculated Field
-    IF SUM(Profit)>0
-    THEN
-    "Positive"
-    ELSE
-    "Negative"
-    END
-- Analytics -> Trend Line -> Linear
-- Analytics -> Cluster -> Number of clusters (easily identifies groups)
-- Analytics -> Forecast -> (right click) Forecast Options -> Forecast Length
-- color 'Red and Green Diverging" is user-friendly
+    - Tableau is a data analysis tool and buisness intelligence platform used for visualizations and analysis of data
+    - Tableau Desktop creates visualizations, workbooks and dashboards
+    - Tableau Prep is used to combine, clean, and shape data for analysis
+    - Worksheets are where you build views of your data
+    - Dashboards are a combination of views from various worksheets
+    - Stories contain a set of worksheets (views) and dashboards that work together to convey information
+    - Tableau Prep Builder is used to prepare data for analysis by combining data, shaping data, and cleaning data
+    - In using Tableau Prep, a workflow consists of adding an input (set of data), adding flow steps (filter, split, rename, pivot, join, etc.) to clean, shape and combine data; running the flow to apply the operations to the entire data set
+    - Dimension fields contain qualitative values (names, dates, geographical data, etc.)
+    - Measure fields contain quantitative and numeric values; you can apply calculations to measure fields and aggregate them
+    - Dimensions and measures can be continuous (infinite range) or discrete (finite) values
+    - Green measures and dimensions are continous
+    - Blue measures and dimensions are discrete
+    - Blends
+        - Allows you to work across multiple seperate data sources
+        - the data sources are queried seperately and the results are visualized together in the view
+        - Brings additional information from a secondary source to a primary source
+    - Parameters are variables that can replace a value in a filter; calculations
+    - Forecasts can be added to a view when there is a minimum of one data dimension and one measure
+    - Dashboard objectives: a collection of multiple views allowing you to compare data
+    - Actions - add interactivity to your data
+        - Filter - use data from one view to filter data in another
+        - Highlight - Manually select a set of marks you want to be highlighted
+        - Change parameters
+    - 'Show Me' on the top right corner of the dashboard is used to manipulate the data into respective visualizations
+
+
