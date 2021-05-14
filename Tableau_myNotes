@@ -14,3 +14,6 @@ Additional Notes:
   - excluding nulls will remove the null rows within all fields
   - adding an output and changing the type into a microsoft excel file (.xlsx) -> Full refresh:create table -> saves a version of the tableau file as an excel file
   - creating a union between two tables
+  - changing the type to cvs file
+  - save flow (can be seen in Tableau_myFlows (1st image)
+  
