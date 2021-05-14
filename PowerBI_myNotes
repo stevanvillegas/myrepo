@@ -10,7 +10,7 @@ Assignment 1: Directions
 * - For visualizations (seen in PowerBI_myVisualizations assignment1(1st picture)), use cards and a donut chart
 
 
-Assignment 1: Syntax
+Assignment 1: Syntax (Measures)
   AuburnCitySales = CALCULATE(SUM(Sales_Table[Sale Value]), FILTER('Sales_Table', [City]="Auburn"))
   ColumbiaCitySales = CALCULATE(SUM(Sales_Table[Sale Value]), FILTER('Sales_Table', [City]="Columbia"))
   ColumbusCitySales = CALCULATE(SUM(Sales_Table[Sale Value]), FILTER('Sales_Table', [City]="Columbus"))
@@ -32,7 +32,7 @@ Assignment 2: Directions
 * - For visualizations (seen in PowerBI_myVisualizations assignment2(2nd picture)), use multi-row cards, clustered column charts, and a gauge
 
 
-Assignment 2: Syntax
+Assignment 2: Syntax (Measures)
 - Gives us the amount of blank cells (=0):
     AnyBlanks = COUNTBLANK(Stock[Make])
     
@@ -86,7 +86,7 @@ Assignment 3: Directions
 - use tooltips, slicers, a treemap, and a table
 - use interactions to make slicers interactive with treemap
 * - seen in PowerBI_myVisualizations assignment3(3rd picture)
-- no syntax for this assignment
+- no syntax (measures) for this assignment
 
 
 
