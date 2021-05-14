@@ -32,6 +32,24 @@ My experience using Tableau Desktop:
 
 
 
+My experience using Tableau Prep:
+* All of my hands-on experience with Tableau Prep can be viewed in the Tableau_Prep_myFlow.pdf
+  - Connecting to Excel files
+  - Check the 'Cleaned with Data Interpreter' box for best results; using this will likely lead to additional automated fields
+  - Dragging tables 
+  - Multiple files -> wildcard union -> include the additional sheets from the file
+  - adding clean steps to tables in the visualization
+  - splitting one field into several fields; split values -> automatic split
+  - all of the changes are logged on the left side of the selection pane; undo
+  - applying recommendations can be very useful
+  - excluding nulls will remove the null rows within all fields
+  - adding an output and changing the type into a microsoft excel file (.xlsx) -> Full refresh:create table -> saves a version of the tableau file as an excel file
+  - creating a union between two tables
+  - changing the type to cvs file
+  - save flow (as seen in 'Tableau_Prep_myFlow.pdf')
+
+
+
 Additional Notes:
     - Tableau is a data analysis tool and buisness intelligence platform used for visualizations and analysis of data
     - Tableau Desktop creates visualizations, workbooks and dashboards
@@ -58,5 +76,3 @@ Additional Notes:
         - Highlight - Manually select a set of marks you want to be highlighted
         - Change parameters
     - 'Show Me' on the top right corner of the dashboard is used to manipulate the data into respective visualizations
-
-
